@@ -1,0 +1,31 @@
+diff --git a/src/AppBundle/Controller/Api/ProgrammerController.php b/src/AppBundle/Controller/Api/ProgrammerController.php
+index a5969fa..15b7128 100644
+--- a/src/AppBundle/Controller/Api/ProgrammerController.php
++++ b/src/AppBundle/Controller/Api/ProgrammerController.php
+@@ -121,6 +121,15 @@ class ProgrammerController extends BaseController
+     /**
+      * @Route("/api/programmers/{nickname}")
+      * @Method({"PUT", "PATCH"})
++     *
++     * @ApiDoc(
++     *  description="Update a programmer",
++     *  input={
++     *      "class"="AppBundle\Form\UpdateProgrammerType",
++     *      "name"=""
++     *  },
++     *  output="Programmer"
++     * )
+      */
+     public function updateAction($nickname, Request $request)
+     {
+@@ -154,6 +163,10 @@ class ProgrammerController extends BaseController
+     /**
+      * @Route("/api/programmers/{nickname}")
+      * @Method("DELETE")
++     *
++     * @ApiDoc(
++     *  description="Delete a programmer"
++     * )
+      */
+     public function deleteAction($nickname)
+     {

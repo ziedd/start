@@ -1,0 +1,24 @@
+diff --git a/src/AppBundle/Controller/Api/BattleController.php b/src/AppBundle/Controller/Api/BattleController.php
+new file mode 100644
+index 0000000..c63bb6d
+--- /dev/null
++++ b/src/AppBundle/Controller/Api/BattleController.php
+@@ -0,0 +1,18 @@
++<?php
++
++namespace AppBundle\Controller\Api;
++
++use AppBundle\Controller\BaseController;
++use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
++use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
++
++class BattleController extends BaseController
++{
++    /**
++     * @Route("/api/battles")
++     * @Method("POST")
++     */
++    public function newAction()
++    {
++    }
++}

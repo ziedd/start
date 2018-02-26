@@ -1,0 +1,17 @@
+diff --git a/tests/AppBundle/Controller/Api/BattleControllerTest.php b/tests/AppBundle/Controller/Api/BattleControllerTest.php
+index becfb20..3989420 100644
+--- a/tests/AppBundle/Controller/Api/BattleControllerTest.php
++++ b/tests/AppBundle/Controller/Api/BattleControllerTest.php
+@@ -43,7 +43,11 @@ class BattleControllerTest extends ApiTestCase
+             '_links.programmer.href',
+             $this->adjustUri('/api/programmers/Fred')
+         );
+-        $this->debugResponse($response);
++        $this->asserter()->assertResponsePropertyEquals(
++            $response,
++            '_embedded.programmer.nickname',
++            'Fred'
++        );
+ 
+         // todo for later
+         //$this->assertTrue($response->hasHeader('Location'));

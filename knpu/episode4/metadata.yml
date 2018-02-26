@@ -1,0 +1,46 @@
+title:  Symfony RESTful API: Authentication with JWT (Course 4)
+summary: |
+    After 3 tutorials, we've got a nice API, But we've been completely ignoring
+    authentication. Thanks to some modern tools, this will be *such* a treat:
+
+    * Understanding JSON web tokens (JWT)
+    * Creating, signing & returning JWT's
+    * Using Guard for a custom JWT authentication system
+    * Sending tokens on the Authorization header
+    * Proper API errors for invalid credentials and missing credentials
+    * Choosing to split into 2 firewalls
+
+illustration: rest-sf-4.png
+tuts_hero:
+    start_step: upgrade-to-symfony-3
+    finish_step: auth-error-remove-debug
+
+chapters:
+    deny-access:
+        video_key: 164097303
+    json-web-token:
+        video_key: 164103012
+    lexikjwt-authentication-bundle:
+        video_key: 164104456
+    token-test:
+        video_key: 164107773
+    create-json-web-token:
+        video_key: 164188245
+    send-token-in-request:
+        video_key: 164107584
+    jwt-guard-authenticator:
+        video_key: 164327147
+    authenticator-comes-to-life:
+        video_key: 164326257
+    always-require-auth:
+        video_key: 164568064
+    entry-point-multiple-firewalls:
+        video_key: 164568758
+    auth-api-problem:
+        video_key: 164569601
+    centralize-error-response:
+        video_key: 164570788
+    handling-invalid-token:
+        video_key: 164572475
+    jwt-other-things:
+        video_key: 164572877

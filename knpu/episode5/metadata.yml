@@ -1,0 +1,61 @@
+title:  "Symfony RESTful API: Hypermedia, Links & Bonuses (Course 5)"
+summary: |
+    After 4 courses, we've somehow avoided the hottest buzzwords in REST:
+    Hypermedia and HATEOAS. These can make your API awesome, or could bring
+    you to your knees with fuzzy details, missing best practices and complexity.
+    Let's make our API awesome:
+
+    * Linking to Resources (and Hypermedia) without hating it
+    * Controlling your JSON fields with VirtualProperty and SerializedName
+    * Customizing your *input* field names with property_path
+    * The wonderful HATEOAS php library
+    * HAL+JSON... and whether you want to use it or not
+    * Subordinate resources!
+    * Handle ugly, non-RESTful, weird endpoints with some swagger
+
+illustration: rest-sf-5.png
+tuts_hero:
+     start_step: "refactor-improve-apitestcase"
+     finish_step: "custom-endpoint-powerup"
+
+chapters:
+    battle-resource:
+        video_key: 167123939
+    create-battle-test:
+        video_key: 167131648
+    saving-related-resources-via-form:
+        video_key: 167136677
+    finishing-the-battle:
+        video_key: 167137905
+    virtual-property:
+        video_key: 167138516
+    property-path:
+        video_key: 167138773
+    battle-validation:
+        video_key: 167140624
+    restrict-valid-programmer-input:
+        video_key: 167141214
+    hateoas-hypermedia-buzzwords:
+        video_key: 167782466
+    link-battle-programmer:
+        video_key: 167787512
+    hateoas-php-library:
+        video_key: 167793217
+    hal-json:
+        video_key: 167794007
+    hal-embedded:
+        video_key: 167792042
+    customize-link-format:
+        video_key: 167795324
+    customize-embedded-rels:
+        video_key: 167813214
+    subordinate-url-structure:
+        video_key: 167812047
+    subordinate-resource-endpoint:
+        video_key: 167831663
+    consistent-collection-resources:
+        video_key: 167831247
+    weird-tagline-endpoint:
+        video_key: 167831908
+    weird-powerup-endpoint:
+        video_key: 167893839

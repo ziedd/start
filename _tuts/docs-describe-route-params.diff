@@ -1,0 +1,13 @@
+diff --git a/src/AppBundle/Controller/Api/ProgrammerController.php b/src/AppBundle/Controller/Api/ProgrammerController.php
+index 8232ad8..a5969fa 100644
+--- a/src/AppBundle/Controller/Api/ProgrammerController.php
++++ b/src/AppBundle/Controller/Api/ProgrammerController.php
+@@ -73,6 +73,8 @@ class ProgrammerController extends BaseController
+      *  description="Return a programmer",
+      *  output="AppBundle\Entity\Programmer"
+      * )
++     *
++     * @param string $nickname The unique nickname of your programmer
+      */
+     public function showAction($nickname)
+     {
