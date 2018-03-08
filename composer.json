@@ -18,7 +18,7 @@
         "doctrine/dbal": "<2.5",
         "doctrine/doctrine-bundle": "~1.2",
         "twig/extensions": "~1.0",
-        "symfony/assetic-bundle": "~2.3",
+        "symfony/assetic-bundle": "^2.8",
         "symfony/swiftmailer-bundle": "~2.3",
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~3.0,>=3.0.12",
@@ -38,7 +38,7 @@
         "behat/mink-extension": "~2.0.1",
         "behat/mink-goutte-driver": "~1.1.0",
         "behat/mink-selenium2-driver": "~1.2.0",
-        "phpunit/phpunit": "~4.6.0"
+        "phpunit/phpunit": "^5"
     },
     "scripts": {
         "post-root-package-install": [

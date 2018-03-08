@@ -1,0 +1,22 @@
+version: '2'
+services:
+  db:
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    image: "mysql:5.6"
+    ports:
+     - "3307:3306"
+
+  api:
+    image: 'phpmentors/symfony-app:php56'
+    environment:
+     - SYMFONY_ENV=dev
+    command: sh -c "chmod +x wait-for-it.sh && ./wait-for-it.sh db:3306 -t 30 && /usr/local/sbin/system-init"
+    ports:
+     - "8888:80"
+    volumes:
+     - ../:/var/app
+     - ./wait-for-it.sh:/root/wait-for-it.sh
+     - ./composer.phar:/var/app/composer.phar
+    depends_on:
+      - db
